@@ -1,0 +1,217 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.log{
+    color: gold;
+    line-height: 60px;
+    margin-left: 60px;
+    font-weight: bold;
+    font-size: 17pt;
+}
+
+nav{
+    background: orangered;
+    width: 100%;
+    height: 70px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 50px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 10px;
+    line-height: 40px;
+}
+
+nav ul li a{
+    color: white;
+}
+
+.active, a:hover{
+    background: white;
+    color: orangered;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.7s;
+}
+
+.checkbtn{
+    color: white;
+    font-size: 17pt;
+    float: right;
+    line-height: 60px;
+    margin-right: 90px;
+    display: none;
+    cursor: pointer;
+}
+
+#check{
+    display: none;
+}
+
+.logo{
+    position: absolute;
+    margin-top: -400px;
+    margin-left: 200px;
+  }
+
+  
+  .text{
+    position: absolute;
+    margin-left: 400px;
+    margin-top: -400px;
+    color: rgb(215, 54, 5);
+  }
+  
+  .text1{
+    font-size: 30pt;
+    font-weight: bold;
+  }
+  
+  .text2{
+    font-size: 25pt;
+  }
+
+  section{
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 75px;
+   }
+  
+  section img{
+    float: left;
+  }
+  
+  .text3{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 380px;
+  }
+  
+  .text4, .text5{
+    font-size: 25pt;
+    color: rgb(215, 54, 5);
+  }
+  
+  .text6{
+    margin-top: 25px;
+    line-height: 25px;
+  }
+  
+  button{
+    background-color: rgb(215, 54, 5) ;
+    color: white;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 20pt;
+    margin-left: 40px;
+    transition: all 0.7s;
+    cursor: pointer;
+  }
+  
+  button:hover{
+    background-color: rgb(240, 104, 62);
+  
+  }
+
+@media screen and (max-width: 858px){
+    
+    .log{
+        font-size: 14pt;
+    }
+
+    .checkbtn{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        background: orangered;
+        width: 50%;
+        height: 100vh;
+        top: 80px;
+        left: -100%;
+        transition: all 0.8s;
+        z-index: 1000;
+    }
+
+    nav ul li{
+        display: block;
+        text-align: center;
+        line-height: 70px;
+    }
+
+    .active, a:hover{
+        background: none;
+        color: gold;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    .logo{
+        margin-top: -180px;
+        margin-left: 50px;
+      }
+
+      .text{
+        margin-left: 200px;
+        margin-top: -170px;
+      }
+
+      .text1{
+        font-size: 15pt;
+        font-weight: bold;
+        text-wrap: nowrap;
+      }
+      
+      .text2{
+        font-size: 15pt;
+        text-wrap: nowrap;
+      }
+
+      section{
+        margin-left: 40px;
+       }
+
+       section img{
+        width: 250px;
+        height: 250px;
+      }
+
+      .text3{
+        margin-top: 10px;
+        margin-left: 280px;
+      }
+
+      .text4, .text5{
+        font-size: 12pt;
+        text-wrap: nowrap;
+      }
+
+      .text6{
+        margin-top: 10px;
+        font-size: 10pt;
+        text-wrap: nowrap;
+      }
+
+    
+}
